@@ -9,6 +9,8 @@ wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
 wp-content/cache/
 wp-content/logs/
+wp-content/themes/
+wp-content/plugins/2emt/
 
 # Archivos de sistema operativo
 .DS_Store

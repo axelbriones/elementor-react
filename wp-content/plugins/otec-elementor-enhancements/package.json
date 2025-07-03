@@ -1,0 +1,21 @@
+{
+  "name": "otec-elementor-enhancements",
+  "version": "1.0.0",
+  "description": "Tailwind CSS and AOS integration for OTEC Elementor widgets.",
+  "main": "otec-elementor-enhancements.php",
+  "scripts": {
+    "build": "tailwindcss -i ./assets/css/tailwind-input.css -o ./assets/css/output.css",
+    "watch": "tailwindcss -i ./assets/css/tailwind-input.css -o ./assets/css/output.css --watch"
+  },
+  "keywords": [
+    "wordpress",
+    "elementor",
+    "tailwind",
+    "aos"
+  ],
+  "author": "Jules for OTEC",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
