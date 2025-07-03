@@ -1,3 +1,96 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 
+  Definición de variables CSS globales requeridas por tailwind.config.js.
+  Ajusta estos valores HSL a tu paleta de diseño real.
+  Estos son ejemplos basados en la convención de ShadCN/UI.
+*/
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* White */
+    --foreground: 222.2 84% 4.9%; /* Dark Gray / Almost Black */
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    /* --primary: definido directamente en tailwind.config.js como #B39DDB */
+    /* --primary-foreground: definido directamente en tailwind.config.js como #FFFFFF */
+ 
+    /* --secondary: definido directamente en tailwind.config.js como #4DB6AC */
+    /* --secondary-foreground: definido directamente en tailwind.config.js como #FFFFFF */
+ 
+    --muted: 210 40% 96.1%; /* Light Gray */
+    --muted-foreground: 215.4 16.3% 46.9%; /* Medium Gray */
+ 
+    --accent: 210 40% 96.1%; /* Light Gray */
+    --accent-foreground: 222.2 47.4% 11.2%; /* Dark Blue/Gray */
+ 
+    --destructive: 0 84.2% 60.2%; /* Red */
+    --destructive-foreground: 0 0% 98%; /* Off-white/Light Gray for text on destructive */
+ 
+    --border: 214.3 31.8% 91.4%; /* Light Gray */
+    --input: 214.3 31.8% 91.4%; /* Light Gray, often same as border */
+    --ring: 217.2 82.9% 65.1%; /* Blue, for focus rings */
+ 
+    --radius: 0.5rem; /* Example value for border radius */
+
+    /* Variables de Sidebar (si las usas, define sus valores) */
+    /* --sidebar-background: 0 0% 100%; */
+    /* --sidebar-foreground: 222.2 84% 4.9%; */
+    /* --sidebar-primary: ...; */
+    /* --sidebar-primary-foreground: ...; */
+    /* --sidebar-accent: ...; */
+    /* --sidebar-accent-foreground: ...; */
+    /* --sidebar-border: ...; */
+    /* --sidebar-ring: ...; */
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    /* Primary and Secondary likely remain the same unless you have dark mode specific brand colors */
+    /* --primary: ...; */
+    /* --primary-foreground: ...; */
+ 
+    /* --secondary: ...; */
+    /* --secondary-foreground: ...; */
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 0 72.2% 50.6%; /* Adjusted ring for dark mode */
+
+    /* Dark mode sidebar variables */
+    /* --sidebar-background: ...; */
+    /* ... etc. */
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
